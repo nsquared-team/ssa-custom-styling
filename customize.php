@@ -41,7 +41,7 @@ add_action( 'admin_head', 'custom_ssa_admin_head' );
 function custom_ssa_admin_head() {
     ?>
     <style>
-       
+       /* Add custom CSS for the SSA admin app here */
     </style>
     <?php
 }
@@ -50,7 +50,7 @@ add_action( 'ssa_booking_head', 'custom_ssa_booking_head' );
 function custom_ssa_booking_head() {
     ?>
     <style>
-		
+	/* Add custom CSS for the SSA booking app here */
     </style>
     <?php
 }
