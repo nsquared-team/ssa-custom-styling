@@ -38,7 +38,7 @@
  */
 
 add_action( 'admin_head', 'custom_ssa_admin_head' );
-function scor_ssa_admin_head() {
+function custom_ssa_admin_head() {
     ?>
     <style>
        
@@ -47,7 +47,7 @@ function scor_ssa_admin_head() {
 }
 
 add_action( 'ssa_booking_head', 'custom_ssa_booking_head' );
-function scor_ssa_booking_head() {
+function custom_ssa_booking_head() {
     ?>
     <style>
 		
