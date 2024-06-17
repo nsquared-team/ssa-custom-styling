@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name: SSA Customization - SCOR v6
+ * Plugin Name: SSA Customization - Custom Styling
  * Plugin URI:  https://simplyscheduleappointments.com
- * Description: Customizations to SSA for SCOR
- * Version:     1.0.6
+ * Description: Customize the admin app or booking app in Simply Schedule Appointments with custom CSS.
+ * Version:     1.0.0
  * Author:      Simply Schedule Appointments
  * Author URI:  https://simplyscheduleappointments.com
  * Donate link: https://simplyscheduleappointments.com
@@ -20,7 +20,7 @@
  */
 
 /**
- * Copyright (c) 2019 Simply Schedule Appointments (email : support@simplyscheduleappointments.com)
+ * Copyright (c) 2024 Simply Schedule Appointments (email : support@ssaplugin.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 or, at
@@ -36,3 +36,21 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1401  USA
  */
+
+add_action( 'admin_head', 'custom_ssa_admin_head' );
+function scor_ssa_admin_head() {
+    ?>
+    <style>
+       
+    </style>
+    <?php
+}
+
+add_action( 'ssa_booking_head', 'custom_ssa_booking_head' );
+function scor_ssa_booking_head() {
+    ?>
+    <style>
+		
+    </style>
+    <?php
+}
