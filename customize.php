@@ -41,7 +41,7 @@ add_action( 'admin_head', 'custom_ssa_admin_head' );
 function custom_ssa_admin_head() {
     ?>
     <style>
-       /* Add custom CSS for the SSA admin app here */
+       /* Add custom CSS for the SSA BACKEND admin app here */
     </style>
     <?php
 }
