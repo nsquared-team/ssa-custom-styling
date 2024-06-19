@@ -7,7 +7,9 @@ https://simplyscheduleappointments.com/guides/add-custom-css/
 WordPress Filter:
 * admin_head
 * ssa_booking_head
+* ssa_admin_head
 
 Enter custom CSS where it says:
-* Add custom CSS for the SSA admin app here 
-* Add custom CSS for the SSA booking app here 
+* Add custom CSS for the SSA BACKEND admin app here 
+* Add custom CSS for the SSA booking app here
+* Add custom CSS for the SSA FRONTEND admin app here
