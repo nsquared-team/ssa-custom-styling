@@ -37,8 +37,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1401  USA
  */
 
-add_action( 'admin_head', 'custom_ssa_admin_head' );
-function custom_ssa_admin_head() {
+add_action( 'admin_head', 'custom_ssa_backend_admin_head' );
+function custom_ssa_backend_admin_head() {
     ?>
     <style>
        /* Add custom CSS for the SSA BACKEND admin app here */
@@ -55,8 +55,8 @@ function custom_ssa_booking_head() {
     <?php
 }
 
-add_action( 'ssa_admin_head', 'custom_ssa_admin_head' );
-function custom_ssa_admin_head() {
+add_action( 'ssa_admin_head', 'custom_ssa_frontend_admin_head' );
+function custom_ssa_frontend_admin_head() {
     ?>
     <style>
 	/* Add custom CSS for the SSA FRONTEND admin app here */
