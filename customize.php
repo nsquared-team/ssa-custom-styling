@@ -54,3 +54,12 @@ function custom_ssa_booking_head() {
     </style>
     <?php
 }
+
+add_action( 'ssa_admin_head', 'custom_ssa_admin_head' );
+function custom_ssa_booking_head() {
+    ?>
+    <style>
+	/* Add custom CSS for the SSA FRONTEND admin app here */
+    </style>
+    <?php
+}
