@@ -4,7 +4,7 @@
  * Plugin Name: SSA Customization - Custom Styling
  * Plugin URI:  https://simplyscheduleappointments.com
  * Description: Customize the admin app or booking app in Simply Schedule Appointments with custom CSS.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Simply Schedule Appointments
  * Author URI:  https://simplyscheduleappointments.com
  * Donate link: https://simplyscheduleappointments.com
@@ -20,7 +20,7 @@
  */
 
 /**
- * Copyright (c) 2024 Simply Schedule Appointments (email : support@ssaplugin.com)
+ * Copyright (c) 2025 Simply Schedule Appointments (email : support@ssaplugin.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 or, at
@@ -42,6 +42,30 @@ function custom_ssa_backend_admin_head() {
     ?>
     <style>
        /* Add custom CSS for the SSA BACKEND admin app here */
+	    --mdc-theme-primary: #558b2f;
+	    --mdc-theme-secondary: #558b2f;
+	    --mdc-theme-background: #fff;
+	    --mdc-theme-surface: #fff;
+	    --mdc-theme-error: #d84315;
+	    --mdc-theme-on-primary: #fff;
+	    --mdc-theme-on-secondary: #fff;
+	    --mdc-theme-on-surface: #000;
+	    --mdc-theme-on-error: #fff;
+	    --mdc-theme-text-primary-on-background: rgba(0, 0, 0, .87);
+	    --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, .54);
+	    --mdc-theme-text-hint-on-background: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-icon-on-background: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-primary-on-light: rgba(0, 0, 0, .87);
+	    --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, .54);
+	    --mdc-theme-text-hint-on-light: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-icon-on-light: rgba(0, 0, 0, .38);
+	    --mdc-theme-text-primary-on-dark: #fff;
+	    --mdc-theme-text-secondary-on-dark: hsla(0, 0%, 100%, .7);
+	    --mdc-theme-text-hint-on-dark: hsla(0, 0%, 100%, .5);
+	    --mdc-theme-text-disabled-on-dark: hsla(0, 0%, 100%, .5);
+	    --mdc-theme-text-icon-on-dark: hsla(0, 0%, 100%, .5);
     </style>
     <?php
 }
