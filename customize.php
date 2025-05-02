@@ -42,30 +42,52 @@ function custom_ssa_backend_admin_head() {
     ?>
     <style>
        /* Add custom CSS for the SSA BACKEND admin app here */
-	    --mdc-theme-primary: #558b2f;
-	    --mdc-theme-secondary: #558b2f;
-	    --mdc-theme-background: #fff;
-	    --mdc-theme-surface: #fff;
-	    --mdc-theme-error: #d84315;
-	    --mdc-theme-on-primary: #fff;
-	    --mdc-theme-on-secondary: #fff;
-	    --mdc-theme-on-surface: #000;
-	    --mdc-theme-on-error: #fff;
-	    --mdc-theme-text-primary-on-background: rgba(0, 0, 0, .87);
-	    --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, .54);
-	    --mdc-theme-text-hint-on-background: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-icon-on-background: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-primary-on-light: rgba(0, 0, 0, .87);
-	    --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, .54);
-	    --mdc-theme-text-hint-on-light: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-icon-on-light: rgba(0, 0, 0, .38);
-	    --mdc-theme-text-primary-on-dark: #fff;
-	    --mdc-theme-text-secondary-on-dark: hsla(0, 0%, 100%, .7);
-	    --mdc-theme-text-hint-on-dark: hsla(0, 0%, 100%, .5);
-	    --mdc-theme-text-disabled-on-dark: hsla(0, 0%, 100%, .5);
-	    --mdc-theme-text-icon-on-dark: hsla(0, 0%, 100%, .5);
+       /* If you don't see a change, use !important to force the override */
+		
+		:root {
+		--new-ssa-bg: ivory;
+	    --mdc-theme-primary: orange !important; /* Replace main green used in toolbar, buttons, and accents */
+		--mdc-theme-on-primary: ivory !important; /* Replace white text on main green components */			
+		}
+		
+		/* Changing the background color of the admin app */
+		div#wpwrap #ssa-admin-app {
+    		background: var(--new-ssa-bg);
+		}
+		/* Changing Settings cards' background and removing images */
+		.settings-list-item .md-card.settings .md-card-media {
+			background: var(--mdc-theme-primary);
+			height: 1em;
+		}
+
+		.settings-list-item .md-card.settings .md-card-media img {
+			display: none;
+		}
+
+		.settings-list-item .md-card.disabled {
+			opacity: .5;
+		}
+		/* Changing the green text */
+		span.mdc-button__label,
+		span.mdc-floating-label.mdc-floating-label--float-above,
+		span.mdc-select__dropdown-icon,
+		.ssa-guides .link{
+			color: var(--mdc-theme-primary);
+		}
+
+		a.link, button.link,
+		.mdc-select2.mdc-select2--has-value label,
+		.mdc-select:not(.mdc-select--disabled) .mdc-floating-label--float-above,
+		.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+
+			color: var(--mdc-theme-primary) !important;
+		}
+		
+		/* Material icon colors, checkboxes, radio buttons */
+		i.material-icons.md-icon.mdc-theme-name--light-green.md-primary.md-size-2x,
+		.mdc-checkbox__background{
+			color: var(--mdc-theme-primary) !important;
+		}
     </style>
     <?php
 }
